@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atividade de Fixação - Java Script</title>
+        <link href="Css.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    </head>
+    <body>
+        <script>
+            alert("Olá, Mundo!");
+          </script>
+        <button onclick="alert('Você clicou no botão!')">Clique Aqui</button>
+        <script>
+            var nome ="prompt(Qual é o seu nome)";
+            alert("Olá, " + nome + "!");
+        </script>
+    </body>  
+</html>      
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interagindo com o Dom</title>
+    </head>
+    <body>
+        <p id="demo">Clique no botão para mudar este texto.</p>
+        <button onclick="document.getElementById('demo').innerHTML ='Texto alterado!'">Clique Aqui</button>
+    </body>
+</html>
+
+    <script>
+        var numero =prompt("Digite um número:");
+        var quadrado = numero * numero;
+        var cubo = numero * numero * numero;
+        alert("O quadrado de " + numero + " é " + quadrado + " e o cubo é " + cubo + ".");
+    </script>
+
+    <script>
+        var num1 = prompt("Digite o primeiro número:");
+        var num2 = prompt("Digite o segundo número:");
+        var soma = parseInt(num1) + parseInt(num2);
+        var multiplicacao = parseInt(num1) * parseInt(num2);
+        alert("A soma dos números é: " + soma + " e a multiplicação é: " + multiplicacao);
+    </script>
+
+    <script>
+        var nota1 = parseFloat(prompt("Digite a primeira nota:"));
+        var nota2 = parseFloat(prompt("Digite a segunda nota:"));
+        var nota3 = parseFloat(prompt("Digite a terceira nota:"));
+        var media = (nota1 + nota2 + nota3) / 3;
+            alert("A média das notas é: " + media.toFixed(2));
+    </script>
+
+    <script>
+        var numero = parseFloat(prompt("Digite um número:"));
+        var raizQuadrada = Math.sqrt(numero);
+        var raizCubica = Math.cbrt(numero);
+        var potenciaQuadrado = Math.pow(numero, 2);
+        var potenciaCubo = Math.pow(numero, 3);
+            alert("Raiz Quadrada: " + raizQuadrada.toFixed(2) + "\nRaiz Cúbica: " + raizCubica.toFixed(2) + "\nPotência ao Quadrado: " + potenciaQuadrado.toFixed(2) + "\nPotência ao Cubo: " + potenciaCubo.toFixed(2));
+    </script>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contador de Cliques</title>
+        <script>
+        var contador = 0;
+        function contarCliques() 
+    {
+        contador++;
+        document.getElementById("contador").innerHTML = "Cliques: " + contador;
+    }
+        </script>
+    </head>
+
+    <body>
+        <button onclick="contarCliques()">Clique Aqui</button>
+  <p id="contador">Cliques: 0</p>
+    </body>
+</html>
